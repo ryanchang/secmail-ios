@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9442D4631808EEB000F180FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D4621808EEB000F180FE /* Foundation.framework */; };
+		9442D4651808EEB000F180FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D4641808EEB000F180FE /* CoreGraphics.framework */; };
+		9442D4671808EEB000F180FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D4661808EEB000F180FE /* UIKit.framework */; };
+		9442D46D1808EEB000F180FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9442D46B1808EEB000F180FE /* InfoPlist.strings */; };
+		9442D4731808EEB000F180FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D4721808EEB000F180FE /* AppDelegate.m */; };
+		9442D47C1808EEB000F180FE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D47B1808EEB000F180FE /* XCTest.framework */; };
+		9442D47D1808EEB000F180FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D4621808EEB000F180FE /* Foundation.framework */; };
+		9442D47E1808EEB000F180FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D4661808EEB000F180FE /* UIKit.framework */; };
+		9442D50C1808F4E500F180FE /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D4F81808F4E500F180FE /* MasterViewController.m */; };
+		9442D50D1808F4E500F180FE /* MCTMsgViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9442D4FA1808F4E500F180FE /* MCTMsgViewController.mm */; };
+		9442D50E1808F4E500F180FE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D4FC1808F4E500F180FE /* SettingsViewController.m */; };
+		9442D50F1808F4E500F180FE /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9442D4FD1808F4E500F180FE /* SettingsViewController.xib */; };
+		9442D5101808F4E500F180FE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9442D4FE1808F4E500F180FE /* main.mm */; };
+		9442D5111808F4E500F180FE /* MCOMessageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5001808F4E500F180FE /* MCOMessageView.mm */; };
+		9442D5121808F4E500F180FE /* MCOMessageViewScript.js in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5011808F4E500F180FE /* MCOMessageViewScript.js */; };
+		9442D5141808F4E500F180FE /* MCTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5051808F4E500F180FE /* MCTTableViewCell.m */; };
+		9442D53C1808F54400F180FE /* FXKeychain_LICENCE.md in Resources */ = {isa = PBXBuildFile; fileRef = 9442D5181808F54300F180FE /* FXKeychain_LICENCE.md */; };
+		9442D53D1808F54400F180FE /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D51A1808F54300F180FE /* FXKeychain.m */; };
+		9442D53E1808F54400F180FE /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D51E1808F54400F180FE /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9442D53F1808F54400F180FE /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5201808F54400F180FE /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9442D5401808F54400F180FE /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5231808F54400F180FE /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9442D5411808F54400F180FE /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5251808F54400F180FE /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9442D5421808F54400F180FE /* GTMOAuth2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9442D5271808F54400F180FE /* GTMOAuth2Window.xib */; };
+		9442D5431808F54400F180FE /* GTMOAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5291808F54400F180FE /* GTMOAuth2WindowController.m */; };
+		9442D5441808F54400F180FE /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D52C1808F54400F180FE /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9442D5451808F54400F180FE /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9442D52D1808F54400F180FE /* GTMOAuth2ViewTouch.xib */; };
+		9442D54A1808F54400F180FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9442D5371808F54400F180FE /* InfoPlist.strings */; };
+		9442D54B1808F54400F180FE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9442D5391808F54400F180FE /* MainStoryboard.storyboard */; };
+		9442D5561808F64900F180FE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D5551808F64900F180FE /* ImageIO.framework */; };
+		9442D56B1808F6FE00F180FE /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D5621808F6C800F180FE /* libMailCore-ios.a */; };
+		9442D56E1808F71900F180FE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D56C1808F71900F180FE /* CFNetwork.framework */; };
+		9442D56F1808F71900F180FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D56D1808F71900F180FE /* Security.framework */; };
+		9442D581180918C100F180FE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D57C1809188D00F180FE /* libcrypto.a */; };
+		9442D582180918C100F180FE /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D5761809187F00F180FE /* libsqlcipher.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9442D47F1808EEB000F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D4571808EEB000F180FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9442D45E1808EEB000F180FE;
+			remoteInfo = SecMail;
+		};
+		9442D55F1808F6C800F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5571808F6C600F180FE /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA537169E772200778456;
+			remoteInfo = "static mailcore2 osx";
+		};
+		9442D5611808F6C800F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5571808F6C600F180FE /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+		9442D5631808F6C800F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5571808F6C600F180FE /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA78C169F259200778456;
+			remoteInfo = tests;
+		};
+		9442D5651808F6C800F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5571808F6C600F180FE /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6A81B911706840C00882C15;
+			remoteInfo = "test-ios";
+		};
+		9442D5671808F6C800F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5571808F6C600F180FE /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
+			remoteInfo = "mailcore osx";
+		};
+		9442D5691808F6D000F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5571808F6C600F180FE /* mailcore2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BA2B091705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+		9442D5751809187F00F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5701809187F00F180FE /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		9442D57B1809188D00F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5771809188C00F180FE /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9069D28C0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
+		9442D57D180918B000F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5771809188C00F180FE /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9069D28B0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
+		9442D57F180918B000F180FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442D5701809187F00F180FE /* sqlcipher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9442D45F1808EEB000F180FE /* SecMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442D4621808EEB000F180FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9442D4641808EEB000F180FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9442D4661808EEB000F180FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9442D46A1808EEB000F180FE /* SecMail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecMail-Info.plist"; sourceTree = "<group>"; };
+		9442D46C1808EEB000F180FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9442D4701808EEB000F180FE /* SecMail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecMail-Prefix.pch"; sourceTree = "<group>"; };
+		9442D4711808EEB000F180FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9442D4721808EEB000F180FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9442D47A1808EEB000F180FE /* SecMailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecMailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442D47B1808EEB000F180FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9442D4F71808F4E500F180FE /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		9442D4F81808F4E500F180FE /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		9442D4F91808F4E500F180FE /* MCTMsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTMsgViewController.h; sourceTree = "<group>"; };
+		9442D4FA1808F4E500F180FE /* MCTMsgViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCTMsgViewController.mm; sourceTree = "<group>"; };
+		9442D4FB1808F4E500F180FE /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		9442D4FC1808F4E500F180FE /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		9442D4FD1808F4E500F180FE /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		9442D4FE1808F4E500F180FE /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		9442D4FF1808F4E500F180FE /* MCOMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOMessageView.h; sourceTree = "<group>"; };
+		9442D5001808F4E500F180FE /* MCOMessageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOMessageView.mm; sourceTree = "<group>"; };
+		9442D5011808F4E500F180FE /* MCOMessageViewScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MCOMessageViewScript.js; sourceTree = "<group>"; };
+		9442D5041808F4E500F180FE /* MCTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTTableViewCell.h; sourceTree = "<group>"; };
+		9442D5051808F4E500F180FE /* MCTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTTableViewCell.m; sourceTree = "<group>"; };
+		9442D5181808F54300F180FE /* FXKeychain_LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FXKeychain_LICENCE.md; sourceTree = "<group>"; };
+		9442D5191808F54300F180FE /* FXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXKeychain.h; sourceTree = "<group>"; };
+		9442D51A1808F54300F180FE /* FXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXKeychain.m; sourceTree = "<group>"; };
+		9442D51D1808F54400F180FE /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		9442D51E1808F54400F180FE /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		9442D51F1808F54400F180FE /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		9442D5201808F54400F180FE /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		9442D5221808F54400F180FE /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		9442D5231808F54400F180FE /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2Authentication.m; sourceTree = "<group>"; };
+		9442D5241808F54400F180FE /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		9442D5251808F54400F180FE /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2SignIn.m; sourceTree = "<group>"; };
+		9442D5271808F54400F180FE /* GTMOAuth2Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2Window.xib; sourceTree = "<group>"; };
+		9442D5281808F54400F180FE /* GTMOAuth2WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2WindowController.h; sourceTree = "<group>"; };
+		9442D5291808F54400F180FE /* GTMOAuth2WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2WindowController.m; sourceTree = "<group>"; };
+		9442D52B1808F54400F180FE /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
+		9442D52C1808F54400F180FE /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
+		9442D52D1808F54400F180FE /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		9442D5381808F54400F180FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		9442D53A1808F54400F180FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9442D5551808F64900F180FE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		9442D5571808F6C600F180FE /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "../mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
+		9442D56C1808F71900F180FE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9442D56D1808F71900F180FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9442D5701809187F00F180FE /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
+		9442D5771809188C00F180FE /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = "openssl-xcode/openssl.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9442D45C1808EEB000F180FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442D581180918C100F180FE /* libcrypto.a in Frameworks */,
+				9442D582180918C100F180FE /* libsqlcipher.a in Frameworks */,
+				9442D56E1808F71900F180FE /* CFNetwork.framework in Frameworks */,
+				9442D56F1808F71900F180FE /* Security.framework in Frameworks */,
+				9442D56B1808F6FE00F180FE /* libMailCore-ios.a in Frameworks */,
+				9442D5561808F64900F180FE /* ImageIO.framework in Frameworks */,
+				9442D4651808EEB000F180FE /* CoreGraphics.framework in Frameworks */,
+				9442D4671808EEB000F180FE /* UIKit.framework in Frameworks */,
+				9442D4631808EEB000F180FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442D4771808EEB000F180FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442D47C1808EEB000F180FE /* XCTest.framework in Frameworks */,
+				9442D47E1808EEB000F180FE /* UIKit.framework in Frameworks */,
+				9442D47D1808EEB000F180FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9442D4561808EEB000F180FE = {
+			isa = PBXGroup;
+			children = (
+				9442D5771809188C00F180FE /* openssl.xcodeproj */,
+				9442D5701809187F00F180FE /* sqlcipher.xcodeproj */,
+				9442D5571808F6C600F180FE /* mailcore2.xcodeproj */,
+				9442D4681808EEB000F180FE /* SecMail */,
+				9442D4611808EEB000F180FE /* Frameworks */,
+				9442D4601808EEB000F180FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9442D4601808EEB000F180FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9442D45F1808EEB000F180FE /* SecMail.app */,
+				9442D47A1808EEB000F180FE /* SecMailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9442D4611808EEB000F180FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9442D56C1808F71900F180FE /* CFNetwork.framework */,
+				9442D56D1808F71900F180FE /* Security.framework */,
+				9442D5551808F64900F180FE /* ImageIO.framework */,
+				9442D4621808EEB000F180FE /* Foundation.framework */,
+				9442D4641808EEB000F180FE /* CoreGraphics.framework */,
+				9442D4661808EEB000F180FE /* UIKit.framework */,
+				9442D47B1808EEB000F180FE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9442D4681808EEB000F180FE /* SecMail */ = {
+			isa = PBXGroup;
+			children = (
+				9442D5181808F54300F180FE /* FXKeychain_LICENCE.md */,
+				9442D5191808F54300F180FE /* FXKeychain.h */,
+				9442D51A1808F54300F180FE /* FXKeychain.m */,
+				9442D51B1808F54300F180FE /* gtm-oauth2 */,
+				9442D5361808F54400F180FE /* en.lproj */,
+				9442D4F61808F4E500F180FE /* controller */,
+				9442D4FE1808F4E500F180FE /* main.mm */,
+				9442D4FF1808F4E500F180FE /* MCOMessageView.h */,
+				9442D5001808F4E500F180FE /* MCOMessageView.mm */,
+				9442D5011808F4E500F180FE /* MCOMessageViewScript.js */,
+				9442D5041808F4E500F180FE /* MCTTableViewCell.h */,
+				9442D5051808F4E500F180FE /* MCTTableViewCell.m */,
+				9442D4711808EEB000F180FE /* AppDelegate.h */,
+				9442D4721808EEB000F180FE /* AppDelegate.m */,
+				9442D4691808EEB000F180FE /* Supporting Files */,
+			);
+			path = SecMail;
+			sourceTree = "<group>";
+		};
+		9442D4691808EEB000F180FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9442D46A1808EEB000F180FE /* SecMail-Info.plist */,
+				9442D46B1808EEB000F180FE /* InfoPlist.strings */,
+				9442D4701808EEB000F180FE /* SecMail-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9442D4F61808F4E500F180FE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9442D4F71808F4E500F180FE /* MasterViewController.h */,
+				9442D4F81808F4E500F180FE /* MasterViewController.m */,
+				9442D4F91808F4E500F180FE /* MCTMsgViewController.h */,
+				9442D4FA1808F4E500F180FE /* MCTMsgViewController.mm */,
+				9442D4FB1808F4E500F180FE /* SettingsViewController.h */,
+				9442D4FC1808F4E500F180FE /* SettingsViewController.m */,
+				9442D4FD1808F4E500F180FE /* SettingsViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9442D51B1808F54300F180FE /* gtm-oauth2 */ = {
+			isa = PBXGroup;
+			children = (
+				9442D51C1808F54300F180FE /* HTTPFetcher */,
+				9442D5211808F54400F180FE /* Source */,
+			);
+			path = "gtm-oauth2";
+			sourceTree = "<group>";
+		};
+		9442D51C1808F54300F180FE /* HTTPFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				9442D51D1808F54400F180FE /* GTMHTTPFetcher.h */,
+				9442D51E1808F54400F180FE /* GTMHTTPFetcher.m */,
+				9442D51F1808F54400F180FE /* GTMHTTPFetchHistory.h */,
+				9442D5201808F54400F180FE /* GTMHTTPFetchHistory.m */,
+			);
+			path = HTTPFetcher;
+			sourceTree = "<group>";
+		};
+		9442D5211808F54400F180FE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9442D5221808F54400F180FE /* GTMOAuth2Authentication.h */,
+				9442D5231808F54400F180FE /* GTMOAuth2Authentication.m */,
+				9442D5241808F54400F180FE /* GTMOAuth2SignIn.h */,
+				9442D5251808F54400F180FE /* GTMOAuth2SignIn.m */,
+				9442D5261808F54400F180FE /* Mac */,
+				9442D52A1808F54400F180FE /* Touch */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9442D5261808F54400F180FE /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				9442D5271808F54400F180FE /* GTMOAuth2Window.xib */,
+				9442D5281808F54400F180FE /* GTMOAuth2WindowController.h */,
+				9442D5291808F54400F180FE /* GTMOAuth2WindowController.m */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		9442D52A1808F54400F180FE /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				9442D52B1808F54400F180FE /* GTMOAuth2ViewControllerTouch.h */,
+				9442D52C1808F54400F180FE /* GTMOAuth2ViewControllerTouch.m */,
+				9442D52D1808F54400F180FE /* GTMOAuth2ViewTouch.xib */,
+			);
+			path = Touch;
+			sourceTree = "<group>";
+		};
+		9442D5361808F54400F180FE /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				9442D5371808F54400F180FE /* InfoPlist.strings */,
+				9442D5391808F54400F180FE /* MainStoryboard.storyboard */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		9442D5581808F6C600F180FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9442D5601808F6C800F180FE /* libMailCore.a */,
+				9442D5621808F6C800F180FE /* libMailCore-ios.a */,
+				9442D5641808F6C800F180FE /* tests */,
+				9442D5661808F6C800F180FE /* test-ios.app */,
+				9442D5681808F6C800F180FE /* MailCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9442D5711809187F00F180FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9442D5761809187F00F180FE /* libsqlcipher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9442D5781809188C00F180FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9442D57C1809188D00F180FE /* libcrypto.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9442D45E1808EEB000F180FE /* SecMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9442D48B1808EEB000F180FE /* Build configuration list for PBXNativeTarget "SecMail" */;
+			buildPhases = (
+				9442D45B1808EEB000F180FE /* Sources */,
+				9442D45C1808EEB000F180FE /* Frameworks */,
+				9442D45D1808EEB000F180FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9442D57E180918B000F180FE /* PBXTargetDependency */,
+				9442D580180918B000F180FE /* PBXTargetDependency */,
+				9442D56A1808F6D000F180FE /* PBXTargetDependency */,
+			);
+			name = SecMail;
+			productName = SecMail;
+			productReference = 9442D45F1808EEB000F180FE /* SecMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9442D4791808EEB000F180FE /* SecMailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9442D48E1808EEB000F180FE /* Build configuration list for PBXNativeTarget "SecMailTests" */;
+			buildPhases = (
+				9442D4761808EEB000F180FE /* Sources */,
+				9442D4771808EEB000F180FE /* Frameworks */,
+				9442D4781808EEB000F180FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9442D4801808EEB000F180FE /* PBXTargetDependency */,
+			);
+			name = SecMailTests;
+			productName = SecMailTests;
+			productReference = 9442D47A1808EEB000F180FE /* SecMailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9442D4571808EEB000F180FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "CandZen Co., Ltd";
+				TargetAttributes = {
+					9442D4791808EEB000F180FE = {
+						TestTargetID = 9442D45E1808EEB000F180FE;
+					};
+				};
+			};
+			buildConfigurationList = 9442D45A1808EEB000F180FE /* Build configuration list for PBXProject "SecMail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9442D4561808EEB000F180FE;
+			productRefGroup = 9442D4601808EEB000F180FE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9442D5581808F6C600F180FE /* Products */;
+					ProjectRef = 9442D5571808F6C600F180FE /* mailcore2.xcodeproj */;
+				},
+				{
+					ProductGroup = 9442D5781809188C00F180FE /* Products */;
+					ProjectRef = 9442D5771809188C00F180FE /* openssl.xcodeproj */;
+				},
+				{
+					ProductGroup = 9442D5711809187F00F180FE /* Products */;
+					ProjectRef = 9442D5701809187F00F180FE /* sqlcipher.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9442D45E1808EEB000F180FE /* SecMail */,
+				9442D4791808EEB000F180FE /* SecMailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9442D5601808F6C800F180FE /* libMailCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMailCore.a;
+			remoteRef = 9442D55F1808F6C800F180FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9442D5621808F6C800F180FE /* libMailCore-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMailCore-ios.a";
+			remoteRef = 9442D5611808F6C800F180FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9442D5641808F6C800F180FE /* tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = tests;
+			remoteRef = 9442D5631808F6C800F180FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9442D5661808F6C800F180FE /* test-ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "test-ios.app";
+			remoteRef = 9442D5651808F6C800F180FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9442D5681808F6C800F180FE /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = 9442D5671808F6C800F180FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9442D5761809187F00F180FE /* libsqlcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlcipher.a;
+			remoteRef = 9442D5751809187F00F180FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9442D57C1809188D00F180FE /* libcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto.a;
+			remoteRef = 9442D57B1809188D00F180FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9442D45D1808EEB000F180FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442D5451808F54400F180FE /* GTMOAuth2ViewTouch.xib in Resources */,
+				9442D46D1808EEB000F180FE /* InfoPlist.strings in Resources */,
+				9442D53C1808F54400F180FE /* FXKeychain_LICENCE.md in Resources */,
+				9442D54B1808F54400F180FE /* MainStoryboard.storyboard in Resources */,
+				9442D50F1808F4E500F180FE /* SettingsViewController.xib in Resources */,
+				9442D5421808F54400F180FE /* GTMOAuth2Window.xib in Resources */,
+				9442D54A1808F54400F180FE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442D4781808EEB000F180FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9442D45B1808EEB000F180FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442D5101808F4E500F180FE /* main.mm in Sources */,
+				9442D5111808F4E500F180FE /* MCOMessageView.mm in Sources */,
+				9442D4731808EEB000F180FE /* AppDelegate.m in Sources */,
+				9442D53F1808F54400F180FE /* GTMHTTPFetchHistory.m in Sources */,
+				9442D5401808F54400F180FE /* GTMOAuth2Authentication.m in Sources */,
+				9442D5441808F54400F180FE /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				9442D53E1808F54400F180FE /* GTMHTTPFetcher.m in Sources */,
+				9442D5411808F54400F180FE /* GTMOAuth2SignIn.m in Sources */,
+				9442D5141808F4E500F180FE /* MCTTableViewCell.m in Sources */,
+				9442D50D1808F4E500F180FE /* MCTMsgViewController.mm in Sources */,
+				9442D50E1808F4E500F180FE /* SettingsViewController.m in Sources */,
+				9442D50C1808F4E500F180FE /* MasterViewController.m in Sources */,
+				9442D5121808F4E500F180FE /* MCOMessageViewScript.js in Sources */,
+				9442D53D1808F54400F180FE /* FXKeychain.m in Sources */,
+				9442D5431808F54400F180FE /* GTMOAuth2WindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442D4761808EEB000F180FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9442D4801808EEB000F180FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9442D45E1808EEB000F180FE /* SecMail */;
+			targetProxy = 9442D47F1808EEB000F180FE /* PBXContainerItemProxy */;
+		};
+		9442D56A1808F6D000F180FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "static mailcore2 ios";
+			targetProxy = 9442D5691808F6D000F180FE /* PBXContainerItemProxy */;
+		};
+		9442D57E180918B000F180FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = crypto;
+			targetProxy = 9442D57D180918B000F180FE /* PBXContainerItemProxy */;
+		};
+		9442D580180918B000F180FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlcipher;
+			targetProxy = 9442D57F180918B000F180FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9442D46B1808EEB000F180FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9442D46C1808EEB000F180FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9442D5371808F54400F180FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9442D5381808F54400F180FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9442D5391808F54400F180FE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9442D53A1808F54400F180FE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9442D4891808EEB000F180FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/ryan/CandZen.com/SecMail/src/secmail-ios/sqlcipher/src",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9442D48A1808EEB000F180FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/ryan/CandZen.com/SecMail/src/secmail-ios/sqlcipher/src",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9442D48C1808EEB000F180FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecMail/SecMail-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/ryan/CandZen.com/SecMail/src/secmail-ios/sqlcipher/src",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "SecMail/SecMail-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-lstdc++",
+					"-stdlib=libstdc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9442D48D1808EEB000F180FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecMail/SecMail-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/ryan/CandZen.com/SecMail/src/secmail-ios/sqlcipher/src",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "SecMail/SecMail-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-lstdc++",
+					"-stdlib=libstdc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9442D48F1808EEB000F180FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecMail.app/SecMail";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecMail/SecMail-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SecMailTests/SecMailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9442D4901808EEB000F180FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecMail.app/SecMail";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecMail/SecMail-Prefix.pch";
+				INFOPLIST_FILE = "SecMailTests/SecMailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9442D45A1808EEB000F180FE /* Build configuration list for PBXProject "SecMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442D4891808EEB000F180FE /* Debug */,
+				9442D48A1808EEB000F180FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9442D48B1808EEB000F180FE /* Build configuration list for PBXNativeTarget "SecMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442D48C1808EEB000F180FE /* Debug */,
+				9442D48D1808EEB000F180FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9442D48E1808EEB000F180FE /* Build configuration list for PBXNativeTarget "SecMailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442D48F1808EEB000F180FE /* Debug */,
+				9442D4901808EEB000F180FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9442D4571808EEB000F180FE /* Project object */;
+}
