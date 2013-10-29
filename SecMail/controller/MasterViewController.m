@@ -13,6 +13,8 @@
 #import "GTMOAuth2ViewControllerTouch.h"
 #import "MCTTableViewCell.h"
 
+#import <sqlite3.h>
+
 #define CLIENT_ID @"the-client-id"
 #define CLIENT_SECRET @"the-client-secret"
 #define KEYCHAIN_ITEM_NAME @"MailCore OAuth 2.0 Token"
@@ -21,6 +23,7 @@
 
 static NSString *mailCellIdentifier = @"MailCell";
 static NSString *inboxInfoIdentifier = @"InboxStatusCell";
+
 
 @interface MasterViewController ()
 @property (nonatomic, strong) NSArray *messages;
@@ -57,6 +60,8 @@ static NSString *inboxInfoIdentifier = @"InboxStatusCell";
         [self startLogin];
     }
 }
+
+
 
 - (void) startLogin
 {
@@ -137,7 +142,21 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
 	self.totalNumberOfInboxMessages = -1;
 	self.isLoading = NO;
 	self.messagePreviews = [NSMutableDictionary dictionary];
-	[self.tableView reloadData];
+    
+    NSMutableArray *combinedMessages = [[NSMutableArray alloc] init];
+    SQLHelper *helper = [SQLHelper sharedSQLHelper];
+    NSArray *db_messages = [helper querySQL:@"select * from mails"];
+    if (db_messages)
+    for (NSDictionary *message in db_messages) {
+        NSLog(@"message:%@",message);
+        MCOIMAPMessage *mess = [SQLHelper imapMessageFromDictionary:message];
+        [combinedMessages addObject:mess];
+        self.messagePreviews[[NSString stringWithFormat:@"%d",mess.uid]] = [message objectForKey:@"plaintextbody"];
+    }
+    
+    self.messages =
+    [combinedMessages sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"header.date" ascending:NO]]];
+    [self.tableView reloadData];
     
 	NSLog(@"checking account");
 	self.imapCheckOp = [self.imapSession checkAccountOperation];
@@ -224,6 +243,13 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
 			MasterViewController *strongSelf = weakSelf;
 			NSLog(@"fetched all messages.");
 			
+            NSLog(@"messages array :%@",messages);
+            for (MCOIMAPMessage *mess in messages) {
+                SQLHelper *helper = [SQLHelper sharedSQLHelper];
+                [helper insertMailWithUid:mess.uid subject:mess.header.subject messageid:mess.header.messageID date:[mess.header.date timeIntervalSince1970] sender:mess.header.sender.displayName add:mess.header.sender.mailbox from:mess.header.from.displayName add:mess.header.from.mailbox body:Nil];
+                
+            }
+            
 			self.isLoading = NO;
 			
 			NSSortDescriptor *sort =
@@ -276,10 +302,13 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
 			
 			NSString *uidKey = [NSString stringWithFormat:@"%d", message.uid];
 			NSString *cachedPreview = self.messagePreviews[uidKey];
+            
+            
 			
 			if (cachedPreview)
 			{
-				cell.detailTextLabel.text = cachedPreview;
+                cell.detailTextLabel.text = cachedPreview;
+				
 			}
 			else
 			{
@@ -290,6 +319,9 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
 					cell.detailTextLabel.text = plainTextBodyString;
 					cell.messageRenderingOperation = nil;
 					self.messagePreviews[uidKey] = plainTextBodyString;
+                    
+                    SQLHelper *helper = [SQLHelper sharedSQLHelper];
+                    [helper updateMailWithUid:message.uid body:plainTextBodyString];
 				}];
 			}
 			

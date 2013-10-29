@@ -60,6 +60,7 @@
             NSAssert(data != nil, @"data != nil");
             
             MCOMessageParser * msg = [MCOMessageParser messageParserWithData:data];
+            
             [_messageView setDelegate:self];
             [_messageView setFolder:_folder];
             [_messageView setMessage:msg];

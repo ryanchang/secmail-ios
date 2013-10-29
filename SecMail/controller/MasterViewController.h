@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SettingsViewController.h"
+#import "SQLHelper.h"
 
 @interface MasterViewController : UITableViewController <SettingsViewControllerDelegate>
 

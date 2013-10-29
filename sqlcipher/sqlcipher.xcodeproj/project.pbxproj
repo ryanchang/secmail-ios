@@ -207,6 +207,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = sqlcipher;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Debug;
 		};
@@ -239,6 +240,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = sqlcipher;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Release;
 		};
