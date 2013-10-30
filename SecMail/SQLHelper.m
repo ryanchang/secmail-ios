@@ -50,18 +50,17 @@ static SQLHelper *_sharedSQLHelper;
     return mess;
 }
 
-
 - (NSString *)databasePath {
     NSString *pathName = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     return [pathName stringByAppendingString:@"/tissot.sqlite"];
 }
 
 - (void) openDatabase {
-    if (sqlite3_open([[self databasePath] UTF8String], &db) != SQLITE_OK) {
-        NSLog(@"open database failed;");
-        
+    if (sqlite3_open([[self databasePath] UTF8String], &db) == SQLITE_OK) {
+        const char* key = [@"BIGSecret" UTF8String];
+        sqlite3_key(db, key, strlen(key));
     } else {
-        
+        NSLog(@"open database failed;");
     }
 }
 
