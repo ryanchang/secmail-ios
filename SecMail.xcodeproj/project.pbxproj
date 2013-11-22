@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2FBA62180933E000E4D68E /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2FBA5B18092EA000E4D68E /* libMailCore-ios.a */; };
 		3A666AAB180BD4760078DEE1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A666AAA180BD4760078DEE1 /* CoreData.framework */; };
 		3A666AB3180BD4B00078DEE1 /* SecMail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A666AB1180BD4B00078DEE1 /* SecMail.xcdatamodeld */; };
 		3A7873BB181F99660052A1A7 /* SQLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7873BA181F99660052A1A7 /* SQLHelper.m */; };
-		3AEABCB7180BCF87007C8D30 /* EncryptedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEABCB6180BCF87007C8D30 /* EncryptedStore.m */; };
+		6E9451B6183C75410056843F /* ADZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9451B4183C75410056843F /* ADZLoginViewController.m */; };
+		6E9451B7183C75410056843F /* ADZLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9451B5183C75410056843F /* ADZLoginViewController.xib */; };
+		6E9451C8183DA9F10056843F /* ADZHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9451C7183DA9F10056843F /* ADZHtml.m */; };
+		6E9451CB183DA9F10056843F /* ADZAllUids.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9451CA183DA9F10056843F /* ADZAllUids.m */; };
+		6E9451CE183DD6960056843F /* ADZCached.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9451CD183DD6960056843F /* ADZCached.m */; };
+		6E991AEA1839A55F00014BD9 /* ADZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E991AE91839A55F00014BD9 /* ADZMasterViewController.m */; };
+		6E9A60B5183B585B008203A4 /* ADZMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9A60B3183B585B008203A4 /* ADZMsgViewController.m */; };
+		6E9A60B6183B585B008203A4 /* ADZMsgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9A60B4183B585B008203A4 /* ADZMsgViewController.xib */; };
+		6EC00DC5183357E200A1294A /* EncryptedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC00DC4183357E200A1294A /* EncryptedStore.m */; };
+		6EC00DC91833588200A1294A /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC00DC81833588200A1294A /* FXKeychain.m */; };
+		6EC00DCA1833599B00A1294A /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC00DBA1833576400A1294A /* libMailCore-ios.a */; };
+		6EC00DD418337D0200A1294A /* ADZStoreMsgToCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC00DD318337D0100A1294A /* ADZStoreMsgToCoreData.m */; };
+		6ED77D051835CEB700D86BEE /* ADZMessageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED77D041835CEB700D86BEE /* ADZMessageAttachment.m */; };
+		6ED77D081835CEB700D86BEE /* ADZMessageSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED77D071835CEB700D86BEE /* ADZMessageSummary.m */; };
 		9442D4631808EEB000F180FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D4621808EEB000F180FE /* Foundation.framework */; };
 		9442D4651808EEB000F180FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D4641808EEB000F180FE /* CoreGraphics.framework */; };
 		9442D4671808EEB000F180FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442D4661808EEB000F180FE /* UIKit.framework */; };
@@ -28,8 +40,6 @@
 		9442D5111808F4E500F180FE /* MCOMessageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5001808F4E500F180FE /* MCOMessageView.mm */; };
 		9442D5121808F4E500F180FE /* MCOMessageViewScript.js in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5011808F4E500F180FE /* MCOMessageViewScript.js */; };
 		9442D5141808F4E500F180FE /* MCTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5051808F4E500F180FE /* MCTTableViewCell.m */; };
-		9442D53C1808F54400F180FE /* FXKeychain_LICENCE.md in Resources */ = {isa = PBXBuildFile; fileRef = 9442D5181808F54300F180FE /* FXKeychain_LICENCE.md */; };
-		9442D53D1808F54400F180FE /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D51A1808F54300F180FE /* FXKeychain.m */; };
 		9442D53E1808F54400F180FE /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D51E1808F54400F180FE /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9442D53F1808F54400F180FE /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5201808F54400F180FE /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9442D5401808F54400F180FE /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442D5231808F54400F180FE /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -48,47 +58,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A2FBA5818092EA000E4D68E /* PBXContainerItemProxy */ = {
+		6EC00DB71833576400A1294A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */;
+			containerPortal = 6EC00DAF1833576300A1294A /* mailcore2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C64EA537169E772200778456;
 			remoteInfo = "static mailcore2 osx";
 		};
-		3A2FBA5A18092EA000E4D68E /* PBXContainerItemProxy */ = {
+		6EC00DB91833576400A1294A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */;
+			containerPortal = 6EC00DAF1833576300A1294A /* mailcore2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
 			remoteInfo = "static mailcore2 ios";
 		};
-		3A2FBA5C18092EA000E4D68E /* PBXContainerItemProxy */ = {
+		6EC00DBB1833576400A1294A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */;
+			containerPortal = 6EC00DAF1833576300A1294A /* mailcore2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C64EA78C169F259200778456;
 			remoteInfo = tests;
 		};
-		3A2FBA5E18092EA000E4D68E /* PBXContainerItemProxy */ = {
+		6EC00DBD1833576400A1294A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */;
+			containerPortal = 6EC00DAF1833576300A1294A /* mailcore2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C6A81B911706840C00882C15;
 			remoteInfo = "test-ios";
 		};
-		3A2FBA6018092EA000E4D68E /* PBXContainerItemProxy */ = {
+		6EC00DBF1833576400A1294A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */;
+			containerPortal = 6EC00DAF1833576300A1294A /* mailcore2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
 			remoteInfo = "mailcore osx";
-		};
-		3A2FBA63180933F900E4D68E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C6BA2B091705F4E6003F0E9E;
-			remoteInfo = "static mailcore2 ios";
 		};
 		9442D47F1808EEB000F180FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -128,13 +131,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "../mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
 		3A666AAA180BD4760078DEE1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3A666AB2180BD4B00078DEE1 /* SecMail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SecMail.xcdatamodel; sourceTree = "<group>"; };
 		3A7873B9181F99660052A1A7 /* SQLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLHelper.h; sourceTree = "<group>"; };
 		3A7873BA181F99660052A1A7 /* SQLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLHelper.m; sourceTree = "<group>"; };
-		3AEABCB5180BCF87007C8D30 /* EncryptedStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptedStore.h; sourceTree = "<group>"; };
-		3AEABCB6180BCF87007C8D30 /* EncryptedStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptedStore.m; sourceTree = "<group>"; };
+		6E9451B3183C75410056843F /* ADZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZLoginViewController.h; sourceTree = "<group>"; };
+		6E9451B4183C75410056843F /* ADZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZLoginViewController.m; sourceTree = "<group>"; };
+		6E9451B5183C75410056843F /* ADZLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADZLoginViewController.xib; sourceTree = "<group>"; };
+		6E9451C6183DA9F10056843F /* ADZHtml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADZHtml.h; path = ../../ADZHtml.h; sourceTree = "<group>"; };
+		6E9451C7183DA9F10056843F /* ADZHtml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADZHtml.m; path = ../../ADZHtml.m; sourceTree = "<group>"; };
+		6E9451C9183DA9F10056843F /* ADZAllUids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADZAllUids.h; path = ../../ADZAllUids.h; sourceTree = "<group>"; };
+		6E9451CA183DA9F10056843F /* ADZAllUids.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADZAllUids.m; path = ../../ADZAllUids.m; sourceTree = "<group>"; };
+		6E9451CC183DD6960056843F /* ADZCached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZCached.h; sourceTree = "<group>"; };
+		6E9451CD183DD6960056843F /* ADZCached.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZCached.m; sourceTree = "<group>"; };
+		6E991AE81839A55F00014BD9 /* ADZMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZMasterViewController.h; sourceTree = "<group>"; };
+		6E991AE91839A55F00014BD9 /* ADZMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZMasterViewController.m; sourceTree = "<group>"; };
+		6E9A60B2183B585B008203A4 /* ADZMsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZMsgViewController.h; sourceTree = "<group>"; };
+		6E9A60B3183B585B008203A4 /* ADZMsgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZMsgViewController.m; sourceTree = "<group>"; };
+		6E9A60B4183B585B008203A4 /* ADZMsgViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADZMsgViewController.xib; sourceTree = "<group>"; };
+		6EC00DAF1833576300A1294A /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
+		6EC00DC3183357E200A1294A /* EncryptedStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptedStore.h; sourceTree = "<group>"; };
+		6EC00DC4183357E200A1294A /* EncryptedStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptedStore.m; sourceTree = "<group>"; };
+		6EC00DC71833588200A1294A /* FXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXKeychain.h; sourceTree = "<group>"; };
+		6EC00DC81833588200A1294A /* FXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXKeychain.m; sourceTree = "<group>"; };
+		6EC00DD218337D0100A1294A /* ADZStoreMsgToCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADZStoreMsgToCoreData.h; path = ../ADZStoreMsgToCoreData.h; sourceTree = "<group>"; };
+		6EC00DD318337D0100A1294A /* ADZStoreMsgToCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADZStoreMsgToCoreData.m; path = ../ADZStoreMsgToCoreData.m; sourceTree = "<group>"; };
+		6ED77D031835CEB700D86BEE /* ADZMessageAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZMessageAttachment.h; sourceTree = "<group>"; };
+		6ED77D041835CEB700D86BEE /* ADZMessageAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZMessageAttachment.m; sourceTree = "<group>"; };
+		6ED77D061835CEB700D86BEE /* ADZMessageSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZMessageSummary.h; sourceTree = "<group>"; };
+		6ED77D071835CEB700D86BEE /* ADZMessageSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZMessageSummary.m; sourceTree = "<group>"; };
 		9442D45F1808EEB000F180FE /* SecMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9442D4621808EEB000F180FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9442D4641808EEB000F180FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -154,14 +179,11 @@
 		9442D4FC1808F4E500F180FE /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		9442D4FD1808F4E500F180FE /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		9442D4FE1808F4E500F180FE /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		9442D4FF1808F4E500F180FE /* MCOMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOMessageView.h; sourceTree = "<group>"; };
-		9442D5001808F4E500F180FE /* MCOMessageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOMessageView.mm; sourceTree = "<group>"; wrapsLines = 1; };
-		9442D5011808F4E500F180FE /* MCOMessageViewScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MCOMessageViewScript.js; sourceTree = "<group>"; };
-		9442D5041808F4E500F180FE /* MCTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTTableViewCell.h; sourceTree = "<group>"; };
-		9442D5051808F4E500F180FE /* MCTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTTableViewCell.m; sourceTree = "<group>"; };
-		9442D5181808F54300F180FE /* FXKeychain_LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FXKeychain_LICENCE.md; sourceTree = "<group>"; };
-		9442D5191808F54300F180FE /* FXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXKeychain.h; sourceTree = "<group>"; };
-		9442D51A1808F54300F180FE /* FXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXKeychain.m; sourceTree = "<group>"; };
+		9442D4FF1808F4E500F180FE /* MCOMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCOMessageView.h; path = ../MCOMessageView.h; sourceTree = "<group>"; };
+		9442D5001808F4E500F180FE /* MCOMessageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MCOMessageView.mm; path = ../MCOMessageView.mm; sourceTree = "<group>"; wrapsLines = 1; };
+		9442D5011808F4E500F180FE /* MCOMessageViewScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = MCOMessageViewScript.js; path = ../MCOMessageViewScript.js; sourceTree = "<group>"; };
+		9442D5041808F4E500F180FE /* MCTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCTTableViewCell.h; path = ../MCTTableViewCell.h; sourceTree = "<group>"; };
+		9442D5051808F4E500F180FE /* MCTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCTTableViewCell.m; path = ../MCTTableViewCell.m; sourceTree = "<group>"; };
 		9442D51D1808F54400F180FE /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
 		9442D51E1808F54400F180FE /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
 		9442D51F1808F54400F180FE /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
@@ -190,11 +212,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9442D56E1808F71900F180FE /* CFNetwork.framework in Frameworks */,
+				6EC00DCA1833599B00A1294A /* libMailCore-ios.a in Frameworks */,
 				3A666AAB180BD4760078DEE1 /* CoreData.framework in Frameworks */,
-				3A2FBA62180933E000E4D68E /* libMailCore-ios.a in Frameworks */,
 				9442D581180918C100F180FE /* libcrypto.a in Frameworks */,
 				9442D582180918C100F180FE /* libsqlcipher.a in Frameworks */,
-				9442D56E1808F71900F180FE /* CFNetwork.framework in Frameworks */,
 				9442D56F1808F71900F180FE /* Security.framework in Frameworks */,
 				9442D5561808F64900F180FE /* ImageIO.framework in Frameworks */,
 				9442D4651808EEB000F180FE /* CoreGraphics.framework in Frameworks */,
@@ -216,35 +238,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A2FBA5118092E9E00E4D68E /* Products */ = {
+		6EC00DB01833576300A1294A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A2FBA5918092EA000E4D68E /* libMailCore.a */,
-				3A2FBA5B18092EA000E4D68E /* libMailCore-ios.a */,
-				3A2FBA5D18092EA000E4D68E /* tests */,
-				3A2FBA5F18092EA000E4D68E /* test-ios.app */,
-				3A2FBA6118092EA000E4D68E /* MailCore.framework */,
+				6EC00DB81833576400A1294A /* libMailCore.a */,
+				6EC00DBA1833576400A1294A /* libMailCore-ios.a */,
+				6EC00DBC1833576400A1294A /* tests */,
+				6EC00DBE1833576400A1294A /* test-ios.app */,
+				6EC00DC01833576400A1294A /* MailCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3AEABCB4180BCF87007C8D30 /* Incremental Store */ = {
+		6EC00DC2183357E200A1294A /* Incremental Store */ = {
 			isa = PBXGroup;
 			children = (
-				3AEABCB5180BCF87007C8D30 /* EncryptedStore.h */,
-				3AEABCB6180BCF87007C8D30 /* EncryptedStore.m */,
+				6EC00DC3183357E200A1294A /* EncryptedStore.h */,
+				6EC00DC4183357E200A1294A /* EncryptedStore.m */,
 			);
 			name = "Incremental Store";
 			path = "encrypted-core-data/Incremental Store";
 			sourceTree = "<group>";
 		};
+		6EC00DC61833588200A1294A /* FXKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				6EC00DC71833588200A1294A /* FXKeychain.h */,
+				6EC00DC81833588200A1294A /* FXKeychain.m */,
+			);
+			name = FXKeychain;
+			path = FXKeychain/FXKeychain;
+			sourceTree = "<group>";
+		};
+		6EC00DD518337F0900A1294A /* candzen */ = {
+			isa = PBXGroup;
+			children = (
+				3A666AB1180BD4B00078DEE1 /* SecMail.xcdatamodeld */,
+				6E9451C9183DA9F10056843F /* ADZAllUids.h */,
+				6E9451CA183DA9F10056843F /* ADZAllUids.m */,
+				6ED77D061835CEB700D86BEE /* ADZMessageSummary.h */,
+				6ED77D071835CEB700D86BEE /* ADZMessageSummary.m */,
+				6E9451C6183DA9F10056843F /* ADZHtml.h */,
+				6E9451C7183DA9F10056843F /* ADZHtml.m */,
+				6ED77D031835CEB700D86BEE /* ADZMessageAttachment.h */,
+				6ED77D041835CEB700D86BEE /* ADZMessageAttachment.m */,
+				6E9451CC183DD6960056843F /* ADZCached.h */,
+				6E9451CD183DD6960056843F /* ADZCached.m */,
+				6EC00DD218337D0100A1294A /* ADZStoreMsgToCoreData.h */,
+				6EC00DD318337D0100A1294A /* ADZStoreMsgToCoreData.m */,
+				6E991AE81839A55F00014BD9 /* ADZMasterViewController.h */,
+				6E991AE91839A55F00014BD9 /* ADZMasterViewController.m */,
+				6E9A60B2183B585B008203A4 /* ADZMsgViewController.h */,
+				6E9A60B3183B585B008203A4 /* ADZMsgViewController.m */,
+				6E9A60B4183B585B008203A4 /* ADZMsgViewController.xib */,
+				6E9451B3183C75410056843F /* ADZLoginViewController.h */,
+				6E9451B4183C75410056843F /* ADZLoginViewController.m */,
+				6E9451B5183C75410056843F /* ADZLoginViewController.xib */,
+			);
+			name = candzen;
+			path = controller;
+			sourceTree = "<group>";
+		};
 		9442D4561808EEB000F180FE = {
 			isa = PBXGroup;
 			children = (
-				3AEABCB4180BCF87007C8D30 /* Incremental Store */,
-				3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */,
+				6EC00DAF1833576300A1294A /* mailcore2.xcodeproj */,
 				9442D5771809188C00F180FE /* openssl.xcodeproj */,
 				9442D5701809187F00F180FE /* sqlcipher.xcodeproj */,
+				6EC00DC61833588200A1294A /* FXKeychain */,
+				6EC00DC2183357E200A1294A /* Incremental Store */,
 				9442D4681808EEB000F180FE /* SecMail */,
 				9442D4611808EEB000F180FE /* Frameworks */,
 				9442D4601808EEB000F180FE /* Products */,
@@ -278,21 +340,13 @@
 		9442D4681808EEB000F180FE /* SecMail */ = {
 			isa = PBXGroup;
 			children = (
-				9442D5181808F54300F180FE /* FXKeychain_LICENCE.md */,
-				9442D5191808F54300F180FE /* FXKeychain.h */,
-				9442D51A1808F54300F180FE /* FXKeychain.m */,
 				9442D51B1808F54300F180FE /* gtm-oauth2 */,
-				9442D5361808F54400F180FE /* en.lproj */,
 				9442D4F61808F4E500F180FE /* controller */,
+				9442D5361808F54400F180FE /* en.lproj */,
+				6EC00DD518337F0900A1294A /* candzen */,
 				9442D4FE1808F4E500F180FE /* main.mm */,
-				9442D4FF1808F4E500F180FE /* MCOMessageView.h */,
-				9442D5001808F4E500F180FE /* MCOMessageView.mm */,
-				9442D5011808F4E500F180FE /* MCOMessageViewScript.js */,
-				9442D5041808F4E500F180FE /* MCTTableViewCell.h */,
-				9442D5051808F4E500F180FE /* MCTTableViewCell.m */,
 				9442D4711808EEB000F180FE /* AppDelegate.h */,
 				9442D4721808EEB000F180FE /* AppDelegate.m */,
-				3A666AB1180BD4B00078DEE1 /* SecMail.xcdatamodeld */,
 				9442D4691808EEB000F180FE /* Supporting Files */,
 				3A7873B9181F99660052A1A7 /* SQLHelper.h */,
 				3A7873BA181F99660052A1A7 /* SQLHelper.m */,
@@ -320,6 +374,11 @@
 				9442D4FB1808F4E500F180FE /* SettingsViewController.h */,
 				9442D4FC1808F4E500F180FE /* SettingsViewController.m */,
 				9442D4FD1808F4E500F180FE /* SettingsViewController.xib */,
+				9442D4FF1808F4E500F180FE /* MCOMessageView.h */,
+				9442D5001808F4E500F180FE /* MCOMessageView.mm */,
+				9442D5011808F4E500F180FE /* MCOMessageViewScript.js */,
+				9442D5041808F4E500F180FE /* MCTTableViewCell.h */,
+				9442D5051808F4E500F180FE /* MCTTableViewCell.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -416,7 +475,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3A2FBA64180933F900E4D68E /* PBXTargetDependency */,
 				9442D57E180918B000F180FE /* PBXTargetDependency */,
 				9442D580180918B000F180FE /* PBXTargetDependency */,
 			);
@@ -469,8 +527,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3A2FBA5118092E9E00E4D68E /* Products */;
-					ProjectRef = 3A2FBA5018092E9E00E4D68E /* mailcore2.xcodeproj */;
+					ProductGroup = 6EC00DB01833576300A1294A /* Products */;
+					ProjectRef = 6EC00DAF1833576300A1294A /* mailcore2.xcodeproj */;
 				},
 				{
 					ProductGroup = 9442D5781809188C00F180FE /* Products */;
@@ -490,39 +548,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3A2FBA5918092EA000E4D68E /* libMailCore.a */ = {
+		6EC00DB81833576400A1294A /* libMailCore.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libMailCore.a;
-			remoteRef = 3A2FBA5818092EA000E4D68E /* PBXContainerItemProxy */;
+			remoteRef = 6EC00DB71833576400A1294A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A2FBA5B18092EA000E4D68E /* libMailCore-ios.a */ = {
+		6EC00DBA1833576400A1294A /* libMailCore-ios.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libMailCore-ios.a";
-			remoteRef = 3A2FBA5A18092EA000E4D68E /* PBXContainerItemProxy */;
+			remoteRef = 6EC00DB91833576400A1294A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A2FBA5D18092EA000E4D68E /* tests */ = {
+		6EC00DBC1833576400A1294A /* tests */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = tests;
-			remoteRef = 3A2FBA5C18092EA000E4D68E /* PBXContainerItemProxy */;
+			remoteRef = 6EC00DBB1833576400A1294A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A2FBA5F18092EA000E4D68E /* test-ios.app */ = {
+		6EC00DBE1833576400A1294A /* test-ios.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "test-ios.app";
-			remoteRef = 3A2FBA5E18092EA000E4D68E /* PBXContainerItemProxy */;
+			remoteRef = 6EC00DBD1833576400A1294A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3A2FBA6118092EA000E4D68E /* MailCore.framework */ = {
+		6EC00DC01833576400A1294A /* MailCore.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MailCore.framework;
-			remoteRef = 3A2FBA6018092EA000E4D68E /* PBXContainerItemProxy */;
+			remoteRef = 6EC00DBF1833576400A1294A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		9442D5761809187F00F180FE /* libsqlcipher.a */ = {
@@ -548,10 +606,11 @@
 			files = (
 				9442D5451808F54400F180FE /* GTMOAuth2ViewTouch.xib in Resources */,
 				9442D46D1808EEB000F180FE /* InfoPlist.strings in Resources */,
-				9442D53C1808F54400F180FE /* FXKeychain_LICENCE.md in Resources */,
+				6E9451B7183C75410056843F /* ADZLoginViewController.xib in Resources */,
 				9442D54B1808F54400F180FE /* MainStoryboard.storyboard in Resources */,
 				9442D50F1808F4E500F180FE /* SettingsViewController.xib in Resources */,
 				9442D5421808F54400F180FE /* GTMOAuth2Window.xib in Resources */,
+				6E9A60B6183B585B008203A4 /* ADZMsgViewController.xib in Resources */,
 				9442D54A1808F54400F180FE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,23 +629,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9451CB183DA9F10056843F /* ADZAllUids.m in Sources */,
+				6ED77D081835CEB700D86BEE /* ADZMessageSummary.m in Sources */,
+				6E9451C8183DA9F10056843F /* ADZHtml.m in Sources */,
 				9442D5101808F4E500F180FE /* main.mm in Sources */,
 				9442D5111808F4E500F180FE /* MCOMessageView.mm in Sources */,
 				9442D4731808EEB000F180FE /* AppDelegate.m in Sources */,
+				6E9451CE183DD6960056843F /* ADZCached.m in Sources */,
 				9442D53F1808F54400F180FE /* GTMHTTPFetchHistory.m in Sources */,
+				6EC00DD418337D0200A1294A /* ADZStoreMsgToCoreData.m in Sources */,
 				9442D5401808F54400F180FE /* GTMOAuth2Authentication.m in Sources */,
 				9442D5441808F54400F180FE /* GTMOAuth2ViewControllerTouch.m in Sources */,
-				3AEABCB7180BCF87007C8D30 /* EncryptedStore.m in Sources */,
 				9442D53E1808F54400F180FE /* GTMHTTPFetcher.m in Sources */,
 				9442D5411808F54400F180FE /* GTMOAuth2SignIn.m in Sources */,
+				6E9451B6183C75410056843F /* ADZLoginViewController.m in Sources */,
 				9442D5141808F4E500F180FE /* MCTTableViewCell.m in Sources */,
 				9442D50D1808F4E500F180FE /* MCTMsgViewController.mm in Sources */,
+				6ED77D051835CEB700D86BEE /* ADZMessageAttachment.m in Sources */,
 				3A7873BB181F99660052A1A7 /* SQLHelper.m in Sources */,
 				9442D50E1808F4E500F180FE /* SettingsViewController.m in Sources */,
+				6EC00DC5183357E200A1294A /* EncryptedStore.m in Sources */,
 				9442D50C1808F4E500F180FE /* MasterViewController.m in Sources */,
 				3A666AB3180BD4B00078DEE1 /* SecMail.xcdatamodeld in Sources */,
+				6EC00DC91833588200A1294A /* FXKeychain.m in Sources */,
 				9442D5121808F4E500F180FE /* MCOMessageViewScript.js in Sources */,
-				9442D53D1808F54400F180FE /* FXKeychain.m in Sources */,
+				6E991AEA1839A55F00014BD9 /* ADZMasterViewController.m in Sources */,
+				6E9A60B5183B585B008203A4 /* ADZMsgViewController.m in Sources */,
 				9442D5431808F54400F180FE /* GTMOAuth2WindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,11 +669,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A2FBA64180933F900E4D68E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "static mailcore2 ios";
-			targetProxy = 3A2FBA63180933F900E4D68E /* PBXContainerItemProxy */;
-		};
 		9442D4801808EEB000F180FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9442D45E1808EEB000F180FE /* SecMail */;

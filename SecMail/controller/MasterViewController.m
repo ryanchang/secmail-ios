@@ -144,16 +144,16 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
 	self.messagePreviews = [NSMutableDictionary dictionary];
     
     NSMutableArray *combinedMessages = [[NSMutableArray alloc] init];
-    SQLHelper *helper = [SQLHelper sharedSQLHelper];
-    NSArray *db_messages = [helper querySQL:@"select * from mails"];
-    if (db_messages)
-    for (NSDictionary *message in db_messages) {
-        NSLog(@"message:%@",message);
-        MCOIMAPMessage *mess = [SQLHelper imapMessageFromDictionary:message];
-        [combinedMessages addObject:mess];
-        self.messagePreviews[[NSString stringWithFormat:@"%d",mess.uid]] = [message objectForKey:@"plaintextbody"];
-    }
-    
+//    SQLHelper *helper = [SQLHelper sharedSQLHelper];
+//    NSArray *db_messages = [helper querySQL:@"select * from mails"];
+//    if (db_messages)
+//    for (NSDictionary *message in db_messages) {
+//        NSLog(@"message:%@",message);
+//        MCOIMAPMessage *mess = [SQLHelper imapMessageFromDictionary:message];
+//        [combinedMessages addObject:mess];
+//        self.messagePreviews[[NSString stringWithFormat:@"%d",mess.uid]] = [message objectForKey:@"plaintextbody"];
+//    }
+
     self.messages =
     [combinedMessages sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"header.date" ascending:NO]]];
     [self.tableView reloadData];
@@ -244,12 +244,8 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
 			NSLog(@"fetched all messages.");
 			
             NSLog(@"messages array :%@",messages);
-            for (MCOIMAPMessage *mess in messages) {
-                SQLHelper *helper = [SQLHelper sharedSQLHelper];
-                [helper insertMailWithUid:mess.uid subject:mess.header.subject messageid:mess.header.messageID date:[mess.header.date timeIntervalSince1970] sender:mess.header.sender.displayName add:mess.header.sender.mailbox from:mess.header.from.displayName add:mess.header.from.mailbox body:Nil];
-                
-            }
-            
+
+
 			self.isLoading = NO;
 			
 			NSSortDescriptor *sort =
@@ -437,7 +433,6 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
 		default:
 			break;
 	}
-
 }
 
 @end

@@ -71,6 +71,7 @@
     else {
         if ([_message isKindOfClass:[MCOIMAPMessage class]]) {
             content = [(MCOIMAPMessage *) _message htmlRenderingWithFolder:_folder delegate:self];
+            NSLog(@"%@", content);
         }
         else if ([_message isKindOfClass:[MCOMessageBuilder class]]) {
             content = [(MCOMessageBuilder *) _message htmlRenderingWithDelegate:self];
@@ -358,11 +359,42 @@
 
 - (NSData *) MCOAbstractMessage:(MCOAbstractMessage *)msg dataForIMAPPart:(MCOIMAPPart *)part folder:(NSString *)folder
 {
-    return [self _dataForIMAPPart:part folder:folder];
+    if (part != NULL)
+    {
+        NSLog(@"***************************************************\n"
+              @"file:%s,"
+              @"line:%d\n"
+              @"partID:%@\n"
+              @"filename:%@\n"
+              @"mimeType:%@\n"
+              @"uniqueID:%@\n"
+              @"contentID:%@\n"
+              @"contentLocation:%@\n"
+              @"contentDescription:%@\n"
+              @"charset:%@\n"
+              @"encoding:%d\n"
+              @"***************************************************", __FILE__, __LINE__, part.partID, part.filename, part.mimeType, part.uniqueID, part.contentID, part.contentLocation, part.contentDescription, part.charset, part.encoding);
+    }
+
+    NSData *data    = [self _dataForIMAPPart:part folder:folder];
+    return data;
 }
 
 - (void) MCOAbstractMessage:(MCOAbstractMessage *)msg prefetchAttachmentIMAPPart:(MCOIMAPPart *)part folder:(NSString *)folder
 {
+    if (part != NULL)
+    {
+        NSLog(@"%@", part.partID);
+        NSLog(@"%@", part.filename);
+        NSLog(@"%@", part.mimeType);
+        NSLog(@"%@", part.uniqueID);
+        NSLog(@"%@", part.contentID);
+        NSLog(@"%@", part.contentLocation);
+        NSLog(@"%@", part.contentDescription);
+        NSLog(@"%@", part.charset);
+        NSLog(@"%d", part.encoding);
+    }
+
     if (!_prefetchIMAPAttachmentsEnabled)
         return;
     
@@ -374,6 +406,20 @@
 
 - (void) MCOAbstractMessage:(MCOAbstractMessage *)msg prefetchImageIMAPPart:(MCOIMAPPart *)part folder:(NSString *)folder
 {
+
+    if (part != NULL)
+    {
+        NSLog(@"%@", part.partID);
+        NSLog(@"%@", part.filename);
+        NSLog(@"%@", part.mimeType);
+        NSLog(@"%@", part.uniqueID);
+        NSLog(@"%@", part.contentID);
+        NSLog(@"%@", part.contentLocation);
+        NSLog(@"%@", part.contentDescription);
+        NSLog(@"%@", part.charset);
+        NSLog(@"%d", part.encoding);
+    }
+
     if (!_prefetchIMAPImagesEnabled)
         return;
     

@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="PERSONINFO" representedClassName="PERSONINFO" syncable="YES">
-        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="age" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ATTACHMENT" representedClassName="ADZMessageAttachment" syncable="YES">
+        <attribute name="dataContent" attributeType="Binary" syncable="YES"/>
+        <attribute name="szFileName" attributeType="String" syncable="YES"/>
+        <attribute name="szMiniType" attributeType="String" syncable="YES"/>
+        <attribute name="szPartUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="szUid" attributeType="String" syncable="YES"/>
+        <relationship name="summary" maxCount="1" deletionRule="Cascade" destinationEntity="SUMMARY" inverseName="attachment" inverseEntity="SUMMARY" syncable="YES"/>
+    </entity>
+    <entity name="HTML" representedClassName="ADZHtml" syncable="YES">
+        <attribute name="szHtml" attributeType="String" syncable="YES"/>
+        <attribute name="szUid" attributeType="String" syncable="YES"/>
+        <relationship name="summary" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SUMMARY" inverseName="html" inverseEntity="SUMMARY" syncable="YES"/>
+    </entity>
+    <entity name="SUMMARY" representedClassName="ADZMessageSummary" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="szPlaintext" attributeType="String" syncable="YES"/>
+        <attribute name="szSubject" attributeType="String" syncable="YES"/>
+        <attribute name="szUid" attributeType="String" syncable="YES"/>
+        <relationship name="attachment" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ATTACHMENT" inverseName="summary" inverseEntity="ATTACHMENT" syncable="YES"/>
+        <relationship name="html" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="HTML" inverseName="summary" inverseEntity="HTML" syncable="YES"/>
+    </entity>
+    <entity name="UIDS" representedClassName="ADZAllUids" syncable="YES">
+        <attribute name="szUids" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PERSONINFO" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ATTACHMENT" positionX="-3195" positionY="-855" width="128" height="133"/>
+        <element name="SUMMARY" positionX="-3431" positionY="-817" width="128" height="133"/>
+        <element name="HTML" positionX="-3188" positionY="-684" width="128" height="88"/>
+        <element name="UIDS" positionX="-3431" positionY="-625" width="128" height="58"/>
     </elements>
 </model>
